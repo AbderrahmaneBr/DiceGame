@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div class="container_all">
+            <svg class="dice" id="dice#1" style="display: block;">
+                <rect width="100" height="100" rx="10" ry="10" style="fill: white;"/>
+                <circle cx="50" cy="50" r="8" style="fill: black;"/>
+            </svg>
+            <svg class="dice" id="dice#2" style="display: none;">
+                <rect width="100" height="100" rx="10" ry="10" style="fill: white;"/>
+                <circle cx="30" cy="70" r="8" style="fill: black;"/>
+                <circle cx="70" cy="30" r="8" style="fill: black;"/>
+            </svg>
+            <svg class="dice" id="dice#3" style="display: none;">
+                <rect width="100" height="100" rx="10" ry="10" style="fill: white;"/>
+                <circle cx="30" cy="70" r="8" style="fill: black;"/>
+                <circle cx="50" cy="50" r="8" style="fill: black;"/>
+                <circle cx="70" cy="30" r="8" style="fill: black;"/>
+            </svg>
+            <svg class="dice" id="dice#4" style="display: none;">
+                <rect width="100" height="100" rx="10" ry="10" style="fill: white;"/>
+                <circle cx="30" cy="70" r="8" style="fill: black;"/>
+                <circle cx="70" cy="30" r="8" style="fill: black;"/>
+                <circle cx="70" cy="70" r="8" style="fill: black;"/>
+                <circle cx="30" cy="30" r="8" style="fill: black;"/>
+            </svg>
+            <svg class="dice" id="dice#5" style="display: none;">
+                <rect width="100" height="100" rx="10" ry="10" style="fill: white;"/>
+                <circle cx="30" cy="70" r="8" style="fill: black;"/>
+                <circle cx="70" cy="30" r="8" style="fill: black;"/>
+                <circle cx="50" cy="50" r="8" style="fill: black;"/>
+                <circle cx="70" cy="70" r="8" style="fill: black;"/>
+                <circle cx="30" cy="30" r="8" style="fill: black;"/>
+            </svg>
+            <svg class="dice" id="dice#6" style="display: none;">
+                <rect width="100" height="100" rx="10" ry="10" style="fill: white;"/>
+                <circle cx="30" cy="70" r="8" style="fill: black;"/>
+                <circle cx="70" cy="30" r="8" style="fill: black;"/>
+                <circle cx="30" cy="50" r="8" style="fill: black;"/>
+                <circle cx="70" cy="50" r="8" style="fill: black;"/>
+                <circle cx="70" cy="70" r="8" style="fill: black;"/>
+                <circle cx="30" cy="30" r="8" style="fill: black;"/>
+            </svg>
+        <div class="tools">
+            <span class="shuffle">SHUFFLE</span>
+            <span class="new">RESTART</span>
+        </div>
+        <div id="player1Div" class="joueur">
+            <span class="nom_joueur">PLAYER 1</span>
+            <span id="scoreP1" class="score_joueur">0</span>
+            <span id="tmp_scoreP1" class="tmp_score">0</span>
+        </div>
+        <div id="player2Div" class="joueur">
+            <span class="nom_joueur">PLAYER 2</span>
+            <span id="scoreP2" class="score_joueur">0</span>
+            <span id="tmp_scoreP2" class="tmp_score">0</span>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
